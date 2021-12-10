@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FiveContactsvLVKotlinV2</string>
+    <string name="title_home">Ligar</string>
+    <string name="title_dashboard">Contatos</string>
+    <string name="title_notifications">Perfil</string>
+    <string name="not_acoount">Not have acoount? <b>SignUp</b></string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>
