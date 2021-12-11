@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#AD95B1"
     android:padding="20dp"
     tools:context=".SignUPActivity">
 
@@ -27,10 +28,10 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/nomeTil"
-        android:layout_marginBottom="10dp"
-        android:layout_above="@+id/emailTil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/emailTil"
+        android:layout_marginBottom="10dp"
 
         >
 
@@ -38,20 +39,17 @@
             android:id="@+id/nomeEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome"
-            />
+            android:hint="Nome" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
 
-
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailTil"
-        android:layout_above="@+id/passwordTil"
-        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordTil"
+        android:layout_marginBottom="10dp"
 
         >
 
@@ -60,20 +58,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
 
 
-
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordTil"
-        app:passwordToggleEnabled="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        app:passwordToggleEnabled="true"
 
         >
 
@@ -81,8 +77,8 @@
             android:id="@+id/passwordEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="Password"/>
+            android:hint="Password"
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
