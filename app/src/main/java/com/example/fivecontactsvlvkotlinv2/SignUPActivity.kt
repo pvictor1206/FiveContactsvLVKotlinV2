@@ -12,6 +12,7 @@ import androidx.appcompat.app.ActionBar
 import com.example.fivecontactsvlvkotlinv2.databinding.ActivitySignUpactivityBinding
 import com.google.firebase.auth.FirebaseAuth
 
+
 class SignUPActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignUpactivityBinding
@@ -26,6 +27,8 @@ class SignUPActivity : AppCompatActivity() {
     private var email = ""
     private var password = ""
     private var logado = false
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -121,3 +124,5 @@ class SignUPActivity : AppCompatActivity() {
     }
 
 }
+
+

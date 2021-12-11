@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".ui.home.HomeFragment">
 
     <TextView
@@ -19,4 +20,62 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ligarOP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        >
+
+        <EditText
+            android:id="@+id/ligarEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numero de Telefone"
+            android:inputType="phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="137dp"
+        android:layout_height="52dp"
+        android:layout_alignStart="@+id/ligarOP"
+        android:layout_alignTop="@+id/ligarOP"
+        android:layout_alignBottom="@+id/ligarOP"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="-74dp"
+        android:text="Ligar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text_home"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ligarOP"
+        android:layout_below="@+id/text_home"
+        android:layout_alignEnd="@+id/ligarOP"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="132dp"
+        android:text="FAZER LIGAÇÃO"
+        android:textSize="38sp"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintTop_toBottomOf="@+id/ligarOP"
+        app:layout_constraintVertical_bias="0.616" />
+</RelativeLayout>

@@ -3,7 +3,7 @@
     <string name="title_home">Ligar</string>
     <string name="title_dashboard">Contatos</string>
     <string name="title_notifications">Perfil</string>
-    <string name="not_acoount">Not have acoount? <b>SignUp</b></string>
+    <string name="not_acoount">Nao tem conta? <b>Cadastre-se</b></string>
     <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>

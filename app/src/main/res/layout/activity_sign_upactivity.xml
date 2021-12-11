@@ -12,16 +12,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="SignUp"/>
+        android:text="Cadastre-se"
+        android:textSize="34sp" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Create a New Account"
         android:layout_below="@+id/titleLabelTv"
-        />
+        android:layout_centerHorizontal="true"
+        android:text="Crie uma nova conta!"
+        android:textSize="20sp" />
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -86,14 +87,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-
     <Button
         android:id="@+id/singUpBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/passwordTil"
         android:layout_marginTop="92dp"
-        android:text="Sign Up" />
+        android:text="Cadastrar" />
 
     <CheckBox
         android:id="@+id/checkBoxLogar"

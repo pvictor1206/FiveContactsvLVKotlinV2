@@ -13,16 +13,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Login"/>
+        android:text="Login"
+        android:textSize="34sp" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Login to your account"
         android:layout_below="@+id/titleLabelTv"
-        />
+        android:layout_centerHorizontal="true"
+        android:text="Entre na sua conta!"
+        android:textSize="34sp" />
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -91,10 +92,10 @@
         android:id="@+id/noAccountTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/not_acoount"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:padding="5dp"/>
+        android:padding="5dp"
+        android:text="@string/not_acoount" />
 
 
 

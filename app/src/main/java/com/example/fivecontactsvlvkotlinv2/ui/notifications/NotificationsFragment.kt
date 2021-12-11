@@ -13,6 +13,8 @@ import com.example.fivecontactsvlvkotlinv2.databinding.FragmentNotificationsBind
 
 class NotificationsFragment : Fragment() {
 
+
+
     private lateinit var notificationsViewModel: NotificationsViewModel
     private var _binding: FragmentNotificationsBinding? = null
 
@@ -42,4 +44,9 @@ class NotificationsFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+
+
+
+
 }

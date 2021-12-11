@@ -10,6 +10,15 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.fivecontactsvlvkotlinv2.R
 import com.example.fivecontactsvlvkotlinv2.databinding.FragmentHomeBinding
+import android.content.Intent
+import android.net.Uri
+import com.example.fivecontactsvlvkotlinv2.MainActivity
+
+import androidx.core.app.ActivityCompat
+
+
+
+
 
 class HomeFragment : Fragment() {
 
@@ -31,9 +40,64 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        binding.button.setOnClickListener {
+
+            /*
+            CODIGO EM JAVA
+
+            String numero = telefone.getText().toString();
+    Uri uri = Uri.parse("tel"+numero);
+
+    Intent intent = new Intent(Intent.ACTION_CALL, uri);
+
+
+
+    if(ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CALL_PHONE) != PackegeManager.PERMISSION_GRANTED) {
+        ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CALL_PHONE}, 1);
+        return;
+    }
+
+    startActivity(intent);
+             */
+
+
+
+            /*
+            CODIGO EM KOTLIN
+
+            val numero: String = telefone.getText().toString()
+            val uri = Uri.parse("tel$numero")
+
+            val intent = Intent(Intent.ACTION_CALL, uri)
+
+
+
+            if (ActivityCompat.checkSelfPermission(
+                    this@MainActivity,
+                    Manifest.permission.CALL_PHONE
+                ) != PackegeManager.PERMISSION_GRANTED
+            ) {
+                ActivityCompat.requestPermissions(
+                    this@MainActivity,
+                    arrayOf(Manifest.permission.CALL_PHONE),
+                    1
+                )
+                return
+            }
+
+            startActivity(intent)
+
+
+
+             */
+
+
+        }
+
         val textView: TextView = binding.textHome
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
+
         })
         return root
     }

@@ -43,6 +43,8 @@ class ForgotPasswordActivity : AppCompatActivity() {
 
 
 
+
+
     }
 
     private fun validateData() {
